@@ -1,0 +1,18 @@
+{
+	cartsDetail{
+    _id
+    cart{
+        _id
+        date
+        customer{
+            firstName
+            lastName
+        }
+    }
+    product{
+        _id
+        name
+        price
+    }
+  }
+}

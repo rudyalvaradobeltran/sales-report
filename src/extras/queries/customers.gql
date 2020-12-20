@@ -1,0 +1,12 @@
+{
+  customers{
+    _id
+    firstName
+    lastName
+    email
+    birthday
+    profile{
+      name
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+	orders{
+        _id
+        address{
+            address
+          	city{
+              name
+            }
+        }
+        cart{
+            _id
+          	customer{
+              firstName
+              lastName
+            }
+        }
+    	total
+    }
+}

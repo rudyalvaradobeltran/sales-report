@@ -1,0 +1,10 @@
+{
+  products{
+    _id
+    name
+    price
+    category{
+      name
+    }
+  }
+}

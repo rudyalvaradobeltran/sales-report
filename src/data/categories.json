@@ -1,0 +1,10 @@
+[{"_id":1,"name":"Movies","active":true},
+{"_id":2,"name":"Baby","active":true},
+{"_id":3,"name":"Computers","active":true},
+{"_id":4,"name":"Outdoors","active":true},
+{"_id":5,"name":"Grocery","active":true},
+{"_id":6,"name":"Jewelery","active":true},
+{"_id":7,"name":"Beauty","active":true},
+{"_id":8,"name":"Clothing","active":true},
+{"_id":9,"name":"Games","active":true},
+{"_id":10,"name":"Music","active":true}]
