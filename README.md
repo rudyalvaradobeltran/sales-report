@@ -4,7 +4,14 @@ Proyecto de ejemplo que simula parte de la base de datos de un carro de compras 
 actividad durante un año.  
 Para insertar datos se requiere de una base de datos MongoDB y correr todas las mutations
 de GraphQL en el orden indicado en extras/mutations.  
-Para generar el reporte llamar al endpoint: localhost:3005/api/reports/main
+
+GraphQL: localhost:3005/graphql
+Reporte: localhost:3005/api/reports/main  
+
+Instalación:  
+npm install  
+sudo systemctl start mongod  
+npm start  
 
 Variables (por defecto):  
     PORT=3005  
