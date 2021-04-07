@@ -5,7 +5,7 @@ actividad durante un año.
 Para insertar datos se requiere de una base de datos MongoDB y correr todas las mutations
 de GraphQL en el orden indicado en extras/mutations.  
 
-GraphQL: localhost:3005/graphql
+GraphQL: localhost:3005/graphql  
 Reporte: localhost:3005/api/reports/main  
 
 Instalación:  
