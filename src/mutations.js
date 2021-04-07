@@ -17,6 +17,8 @@ import productList from "./data/products.json";
 import profileList from "./data/profiles.json";
 
 import dotenv from 'dotenv';
+import Chance from 'chance';
+import moment from 'moment';
 dotenv.config();
 
 export const Mutation = {
@@ -64,11 +66,8 @@ export const Mutation = {
                     newCart._id = i;
                     newCart.customer = customerId;
                     newCart.address = currentAddress._id;
-                    var day = Math.round(Math.random()*(28-1)+parseInt(1)); //en este universo solo hay 28 días
-                        day = (day < 10) ? ("0" + day).toString() : day.toString();
-                    var month = Math.round(Math.random()*(12-1)+parseInt(1));
-                        month = (month < 10) ? ("0" + month).toString() : month.toString();
-                    newCart.date = day + "/" + month + "/" + process.env.YEAR;
+                    var chance = new Chance();
+                    newCart.date = moment(chance.date({american: false, year: process.env.YEAR})).format('DD/MM/YYYY');
                     await newCart.save();
                     count = count + 1;
                 }catch(error){
